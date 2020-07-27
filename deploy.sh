@@ -8,5 +8,9 @@ set -e
 
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/artmindaSport/4black.git master:gh-pages
+git push
+git checkout gh-pages
+git merge master
+git checkout master
+# git push -f https://github.com/artmindaSport/4black.git master:gh-pages
 # cd -
