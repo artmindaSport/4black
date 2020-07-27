@@ -1400,6 +1400,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -1508,8 +1509,12 @@ button#cfsubmit:hover {
   -------------*/
 
 .footer {
-    margin-top: 10vh;
+    background-color: #33576a !important;
     padding: 20px 0px 10px 0px;
+}
+
+.footer_min {
+    width: 75%;
 }
 
 .profile-page .footer {
@@ -1549,7 +1554,7 @@ button#cfsubmit:hover {
 
 .footer a {
     text-decoration: none;
-    color: #5F9EA0;
+    color: #fff;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -1660,6 +1665,10 @@ button#cfsubmit:hover {
 
     .menu > div h2 {
         font-size: 18px;
+    }
+
+    .footer_min {
+       width: 100%;  
     }
 
     .footer .copyright{
