@@ -476,17 +476,27 @@ body {
     padding: 0;
     overflow: hidden;
     position: relative;
+    background-color: #33576a;
 }
 
-.introduction img.logo {
-    position: absolute;
+.flexBox {
+    margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
 }
+
+/* .introduction img.logo {
+    width: 250px;
+    position: relative;
+} */
 
 .mask {
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    background-color: #33576a;
+    background-color: #ff7f32;
     filter: alpha(opacity=80);
     position: absolute;
     top: 0;
@@ -508,9 +518,9 @@ body {
     color: #33576a;
 }
 
-.image_logo_intro .intro-content {
+/* .image_logo_intro .intro-content {
     top: 20%;
-}
+} */
 
 .text_logo_intro .intro-content {
     top: 35%;
@@ -519,9 +529,13 @@ body {
 .intro-content {
     font-family: 'Playfair Display', serif;
     position: relative;
+    max-width: 320px;
     z-index: 10;
-    display: table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .intro-content h1 {
@@ -552,9 +566,9 @@ body {
     padding-left: 21px;
 }
 
-.image_logo_intro .intro-content .social-media {
+/* .image_logo_intro .intro-content .social-media {
     margin-top: 120%;
-}
+} */
 
 .text_logo_intro .intro-content .social-media {
     margin-top: 50px;
@@ -564,12 +578,15 @@ body {
     font-size: 25px;
     text-align: center;
     position: relative;
+    display: inline-flex;
+    margin-top: 15px;
 }
 
 .social-media a {
-    color: #4b4b4b;
+    color: #fff;
     text-decoration: none;
     outline: 0 none;
+    margin: 10px 0;
     padding: 0 10px;
 }
 
@@ -1592,22 +1609,17 @@ button#cfsubmit:hover {
     .introduction{
         text-align: center;
         z-index: 9999;
-        background-color: #fff;
     }
 
     .text_logo_intro .intro-content{
         top: 15%;
     }
-
-    .image_logo_intro .intro-content{
-        top: 0%;
-    }
-
+/* 
     .introduction img.logo {
         position: absolute;
         top: 3%;
         left: 0;
-    }
+    } */
 
     .intro-content h1{
         margin-bottom: 12px;
@@ -1632,13 +1644,13 @@ button#cfsubmit:hover {
         margin-top: 0px;
     }
 
-    .image_logo_intro .intro-content .social-media{
+    /* .image_logo_intro .intro-content .social-media{
         margin-top: 115%;
-    }
+    } */
 
     .social-media a{
+        color: #fff;
         font-size: 22px;
-        padding: 5px;
     }
 
     .close-btn{
