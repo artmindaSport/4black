@@ -7,7 +7,7 @@ set -e
 # cd dist
 
 git add -A
-git commit -m 'deploy'
+git commit -m ' deploy '
 git push
 git checkout gh-pages
 git merge master
