@@ -35,7 +35,7 @@ $(document).ready(function () {
 
             $('.introduction , .menu').css({
                 width: '100%',
-                height: '50%'
+                height: '50vh'
             });
 
         }
@@ -136,7 +136,13 @@ $(document).ready(function () {
 
     $('.menu').on('click', 'div.portfolio-btn', function () {
         setTimeout(function(){
-            $('#projects').mixItUp();
+            $('.pop-up-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery:{
+                    enabled:true
+                }
+            });
         }, 100);
     });
 

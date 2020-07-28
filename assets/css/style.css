@@ -487,6 +487,10 @@ body {
     flex-wrap: wrap; 
 }
 
+.flexBox img {
+    width: 100%;
+}
+
 /* .introduction img.logo {
     width: 250px;
     position: relative;
@@ -1548,7 +1552,7 @@ button#cfsubmit:hover {
 
 .footer .author {
     float: right;
-    line-height: 1;
+    line-height: 24px;
     color: #fff;
 }
 
@@ -1679,6 +1683,7 @@ button#cfsubmit:hover {
 
     .footer .author{
         float: none;
+        line-height: 24px;
         text-align: center;
     }
 
@@ -1687,7 +1692,6 @@ button#cfsubmit:hover {
     }
 
     .home-page{
-        min-height: 641px;
         overflow: auto;
         position: absolute;
     }
