@@ -493,6 +493,7 @@ body {
 
 .flexBox img {
     width: 100%;
+    width: -webkit-fill-available;
 }
 
 /* .introduction img.logo {
