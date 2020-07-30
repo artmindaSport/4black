@@ -31,6 +31,10 @@ $(document).ready(function () {
                 height: '100%'
             });
 
+            $('.full-height').css({
+                minHeight: $(window).height()-93
+            });
+
         } else {
 
             $('.introduction , .menu').css({
@@ -38,11 +42,11 @@ $(document).ready(function () {
                 height: $(window).height()/2
             });
 
-        }
+            $('.full-height').css({
+                minHeight: $(window).height()-126
+            });
 
-        $('.full-height').css({
-            minHeight: $(window).height()-93
-        });
+        }
 
         // Homepage Profile Image Responsive
 
