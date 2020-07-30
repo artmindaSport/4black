@@ -4,7 +4,7 @@
     ------------------  */
 
 $(window).load(function () {
-    $('#preloader').delay(350).fadeOut('slow', function () {
+    $('#preloader').delay(100).fadeOut('slow', function () {
         //$('.profile-page, .portfolio-page, .service-page, .contact-page').hide();
     });
 });
@@ -35,10 +35,14 @@ $(document).ready(function () {
 
             $('.introduction , .menu').css({
                 width: '100%',
-                height: '50vh'
+                height: $(window).height()/2
             });
 
         }
+
+        $('.full-height').css({
+            minHeight: $(window).height()-93
+        });
 
         // Homepage Profile Image Responsive
 
